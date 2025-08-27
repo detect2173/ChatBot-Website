@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="server119.web-hosting.com" id="659b155e-d276-4d02-9e78-aa76a24ccfc9" keyPath="C:\Users\jfber\Downloads\id_rsa.ppk" port="21098" nameFormat="DESCRIPTIVE" username="greagfup" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

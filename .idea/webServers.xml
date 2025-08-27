@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="69dabb8a-88c8-4d63-9887-432b04a402bd" name="NameCheapGOM" url="http://greatowlmarketing.com">
+        <fileTransfer rootFolder="/home/greagfup/public_html" accessType="SFTP" host="server119.web-hosting.com" port="21098" sshConfigId="659b155e-d276-4d02-9e78-aa76a24ccfc9" sshConfig="greagfup@server119.web-hosting.com:21098 key" keyPair="true" />
+      </webServer>
+    </option>
+  </component>
+</project>

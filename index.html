@@ -514,10 +514,6 @@
       <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
       <div class="getresponse-form-container">
-        <button type="button" id="gr-popup-trigger" class="btn btn-primary btn-large gr-popup-trigger" aria-label="Open email signup popup">
-          <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
-          Join the Mailing List
-        </button>
         <getresponse-form form-id="b2decda2-b47b-4a80-b819-beefc5cea304" e="1"></getresponse-form>
       </div>
     </section>
@@ -628,6 +624,24 @@
           navbar.classList.add("scrolled");
         } else {
           navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Ensure Calendly popup button works even if script loads slowly
+      document.addEventListener("DOMContentLoaded", function () {
+        const calendlyBtn = document.querySelector('[aria-label="Open Calendly booking popup"]');
+        const calendlyUrl = 'https://calendly.com/phineasjholdings-info/30min?primary_color=4f46e5';
+        if (calendlyBtn) {
+          calendlyBtn.addEventListener('click', function (e) {
+            // If Calendly widget API is available, use popup; otherwise fallback to opening the page
+            if (window.Calendly && typeof window.Calendly.initPopupWidget === 'function') {
+              window.Calendly.initPopupWidget({ url: calendlyUrl });
+              e.preventDefault();
+              return false;
+            } else {
+              window.open(calendlyUrl, '_blank', 'noopener');
+            }
+          });
         }
       });
 

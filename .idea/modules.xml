@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/vector-converter.iml" filepath="$PROJECT_DIR$/.idea/vector-converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GOM.iml" filepath="$PROJECT_DIR$/.idea/GOM.iml" />
     </modules>
   </component>
 </project>

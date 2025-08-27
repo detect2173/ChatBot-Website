@@ -46,6 +46,22 @@
   </script>
   <!-- End GetResponse Analytics -->
   <!-- End GetResponse Analytics -->
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+    <script type="text/javascript">
+      window.addEventListener('load', function () {
+        if (window.Calendly && typeof window.Calendly.initBadgeWidget === 'function') {
+          window.Calendly.initBadgeWidget({
+            url: 'https://calendly.com/phineasjholdings-info/30min',
+            text: 'Schedule time with me',
+            color: '#0069ff',
+            textColor: '#ffffff',
+            branding: true
+          });
+        }
+      });
+    </script>
+    <!-- Calendly badge widget end -->
   </head>
   <body>
     <!-- Navigation -->

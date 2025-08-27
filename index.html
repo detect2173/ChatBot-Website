@@ -487,18 +487,23 @@
           </div>
         </div>
 
-      <!-- Book a Call (Calendly) -->
+      <!-- Book a Call (Calendly Popup) -->
       <div class="getresponse-form-container" aria-label="Book a Call Scheduler">
         <h3 style="margin-bottom: 0.75rem; color: #1f2937;">Book a Call</h3>
         <p style="margin-bottom: 1rem; color: #4b5563;">
-          Pick a time that works for you and we’ll discuss your custom chatbot needs.
+          Pick a time that works for you and we’ll discuss your custom chatbot needs, answer any questions you may have, and outline a plan if you choose to move forward.
         </p>
-        <div
-          class="calendly-inline-widget"
-          data-url="https://calendly.com/phineasjholdings-info/30min"
-          style="min-width: 320px; height: 700px;"
-        ></div>
-        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+        <button
+          type="button"
+          class="btn btn-primary btn-large"
+          onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/phineasjholdings-info/30min?primary_color=4f46e5' }); return false;"
+          aria-label="Open Calendly booking popup"
+        >
+          <i class="fas fa-calendar-check" aria-hidden="true"></i>
+          Book a Call
+        </button>
+
         <noscript>
           <p>
             Calendly requires JavaScript. You can also
@@ -506,6 +511,7 @@
           </p>
         </noscript>
       </div>
+      <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
       <div class="getresponse-form-container">
         <getresponse-form form-id="b2decda2-b47b-4a80-b819-beefc5cea304" e="1"></getresponse-form>

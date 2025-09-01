@@ -10,7 +10,14 @@ getresponse-form,
   margin-bottom: 2.5rem !important;
   width: 100% !important;
 }
-/* Reset and Base Styles */
+.calendly-badge-widget {
+    right: auto !important;
+    left: 20px !important;   /* Moves it to the left side */
+    bottom: 20px !important; /* Adjust vertical space if needed */
+}
+
+
+        /* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;

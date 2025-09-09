@@ -3,11 +3,17 @@
   <component name="PublishConfigData" autoUpload="Always" serverName="server119.web-hosting.com" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" autoUploadExternalChanges="true">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
+      <paths name="NameCheap GOM">
+        <serverdata>
+          <mappings>
+            <mapping local="C:/repos/ChatBot-Website" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="server119.web-hosting.com">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html" local="$PROJECT_DIR$" web="/" />
-            <mapping local="" />
+            <mapping local="C:/repos/ChatBot-Website" web="/" />
           </mappings>
         </serverdata>
       </paths>

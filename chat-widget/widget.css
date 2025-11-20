@@ -1,0 +1,102 @@
+/* Floating button */
+#samantha-launcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 99999;
+    transition: transform 0.2s ease;
+}
+
+#samantha-launcher:hover {
+    transform: scale(1.08);
+}
+
+#samantha-launcher img {
+    width: 34px;
+}
+
+/* Widget window */
+#samantha-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px;
+    height: 520px;
+    background: #111827;
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 99999;
+}
+
+/* Header */
+#samantha-header {
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    padding: 14px;
+    text-align: center;
+}
+
+#samantha-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#samantha-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.samantha-bubble {
+    max-width: 85%;
+    padding: 10px 14px;
+    margin: 6px 0;
+    border-radius: 14px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.samantha-ai {
+    background: #1f2937;
+    align-self: flex-start;
+}
+
+.samantha-user {
+    background: #0ea5e9;
+    align-self: flex-end;
+}
+
+/* Input bar */
+#samantha-input-bar {
+    display: flex;
+    border-top: 1px solid #1f2937;
+}
+
+#samantha-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #111827;
+    color: white;
+}
+
+#samantha-send {
+    background: #0ea5e9;
+    padding: 0 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
